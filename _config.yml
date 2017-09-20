@@ -6,7 +6,7 @@ email: eddiewuyidi@gmail.com
 description: ""
 keyword: ""
 url: "http://wuyidi.github.io"              # your host, for absolute URL
-baseurl: "/Wuyidi.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/wuyidi.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
