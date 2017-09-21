@@ -1,3 +1,3 @@
 # Yidi's Blog
 
-#####--powered by Boilerplate of Hux Blog
+##### --powered by Boilerplate of Hux Blog
