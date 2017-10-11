@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Welcome to Yidi's Blog"
+title:      "Welcome to Jarvis's Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2017-09-20 22:00:00
 author:     "Yidi"
