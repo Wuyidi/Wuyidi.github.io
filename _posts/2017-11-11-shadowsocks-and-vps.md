@@ -19,7 +19,7 @@ Shadowsocks(ss) 是由 [Clowwindy](https://github.com/Clowwindy) 开发的一款
 
 ### 服务器的选择
 
-搭建自己的翻墙服务器, 首先要购买一台带有root权限的VPS服务器, 对于国外的服务器, 这里有两个选择一个是 [搬瓦工](https://bandwagonhost.com/), 另一个是 [Vultr](https://www.vultr.com/?ref=7260792)
+搭建自己的翻墙服务器, 首先要购买一台带有root权限的VPS服务器, 对于国外的服务器, 这里有两个选择一个是 [搬瓦工](https://bandwagonhost.com/), 另一个是 [Vultr](https://www.vultr.com/?ref=7264410)
 
 因为搬瓦工在国内太火所以有些超售严重, 所以在这里还是推荐vultr
 
@@ -120,4 +120,31 @@ nano /etc/shadowsocks.json
 锐速 ServerSpeeder 是一个 TCP 加速软件，对 Shadowsocks 客户端和服务器端间的传输速度有显著提升。
 
 而且，不同于 FinalSpeed 或 Kcptun 等需要客户端的工具，「锐速」的一大优势是只需要在服务器端单边部署就行了。换句话说，你不需要再安装另外一个应用。另外，「锐速」虽然已经停止注册和安装了，不过网上还是有不少「破解版」可用。
+
+使用一键安装脚本:
+
+```shell
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+```
+
+如果提示不支持该内核:
+
+CentOS 6 更换内核
+
+```shell
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm --force
+```
+
+CentOS 7 更换内核
+
+```shell
+rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
+```
+
+
+
+
+
+至此就搭建成功了
 
