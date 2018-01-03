@@ -59,8 +59,48 @@ cat > __init__.py
 ### 测试
 
 ```python
->>> from libsvm.svm import *
+from libsvm.svmutil import *
+from libsvm.svm import *
+
+
+y, x = [1, -1], [{1: 1, 2: 1}, {1: -1, 2: -1}]
+prob = svm_problem(y, x)
+param = svm_parameter('-t 0 -c 4 -b 1')
+model = svm_train(prob, param)
+
+
+yt = [1]
+xt = [{1: 1, 2: 1}]
+p_label, p_acc, p_val = svm_predict(yt, xt, model)
+print(p_label)
 ```
 
-如果无报错说明安装成功
+输出
 
+> *
+> optimization finished, #iter = 1
+> nu = 0.062500
+> obj = -0.250000, rho = 0.000000
+> nSV = 2, nBSV = 0
+> Total nSV = 2
+> *
+> optimization finished, #iter = 1
+> nu = 0.062500
+> obj = -0.250000, rho = 0.000000
+> nSV = 2, nBSV = 0
+> Total nSV = 2
+> *
+> optimization finished, #iter = 1
+> nu = 0.062500
+> obj = -0.250000, rho = 0.000000
+> nSV = 2, nBSV = 0
+> Total nSV = 2
+> *
+> optimization finished, #iter = 1
+> nu = 0.062500
+> obj = -0.250000, rho = 0.000000
+> nSV = 2, nBSV = 0
+> Total nSV = 2
+> Model supports probability estimates, but disabled in predicton.
+> Accuracy = 100% (1/1) (classification)
+> [1.0]
