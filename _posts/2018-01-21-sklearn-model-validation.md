@@ -400,10 +400,11 @@ tn(True negative)：被判断为负样本，实际也是负样本。
 
     ​
 
-| average  | Precision                                | Recall                                   | F_beta                                   |
-| -------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| micro    | $$P(y, \hat y)$$                         | $$R(y, \hat y)$$                         | $$F_\beta(y, \hat y)$$                   |
-| samples  | $$\frac{1}{\vert S \vert} \sum_{s\in S}P(y_s, \hat{y_s})$$ | $$\frac{1}{\vert S \vert} \sum_{s\in S}R(y_s, \hat{y_s})$$ | $$\frac{1}{\vert S \vert} \sum_{s\in S}F_\beta(y_s, \hat{y_s})$$ |
-| macro    | $$\frac{1}{\vert L \vert} \sum_{l\in L}P(y_l, \hat{y_l})$$ | $$\frac{1}{\vert L \vert} \sum_{l\in L}R(y_l, \hat{y_l})$$ | $$\frac{1}{\vert L \vert} \sum_{l\in L}F_\beta(y_l, \hat{y_l})$$ |
+| average  | Precision                                                    | Recall                                                       | F_beta                                                       |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| micro    | $$P(y, \hat {y})$$                                           | $$R(y, \hat {y})$$                                           | $$F_\beta(y, \hat {y})$$                                     |
+| samples  | $$\frac{1}{\vert S \vert} \sum_{s\in S}P(y_s, \hat{y_s})$$   | $$\frac{1}{\vert S \vert} \sum_{s\in S}R(y_s, \hat{y_s})$$   | $$\frac{1}{\vert S \vert} \sum_{s\in S}F_\beta(y_s, \hat{y_s})$$ |
+| macro    | $$\frac{1}{\vert L \vert} \sum_{l\in L}P(y_l, \hat{y_l})$$   | $$\frac{1}{\vert L \vert} \sum_{l\in L}R(y_l, \hat{y_l})$$   | $$\frac{1}{\vert L \vert} \sum_{l\in L}F_\beta(y_l, \hat{y_l})$$ |
 | weighted | $$\frac{1}{\sum_{t \in L}\vert \hat{y_l} \vert} \sum_{l\in L} \vert \hat {y_l}\vert P(y_l, \hat{y_l})$$ | $$\frac{1}{\sum_{t \in L}\vert \hat{y_l} \vert} \sum_{l\in L} \vert \hat {y_l}\vert R(y_l, \hat{y_l})$$ | $$\frac{1}{\sum_{t \in L}\vert \hat{y_l} \vert} \sum_{l\in L} \vert \hat {y_l}\vert F_\beta(y_l, \hat{y_l})$$ |
 | None     | $$\left\langle P(y_l, \hat{y_l} \vert l \in L) \right \rangle$$ | $$\left\langle R(y_l, \hat{y_l} \vert l \in L) \right \rangle$$ | $$\left\langle F_\beta(y_l, \hat{y_l} \vert l \in L) \right \rangle$$ |
+
