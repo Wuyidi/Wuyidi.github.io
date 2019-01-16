@@ -116,5 +116,3 @@ def load_from_file(file):
 ### Conclusion
 
 Python中的classmethod（和staticmethod）并不止拥有美学上（或者命名空间上）的意义，而是可以实际参与多态的、足够纯粹的OOP功能，原理在于Python中类可以作为first class的对象使用，很大程度上替代其他OOP语言中的工厂模式。classmethod既可以作为factory method提供额外的构造实例的手段，也可以作为工厂类的接口，用来读取或者修改工厂类本身。classmethod还可以通过额外的类引用，提供继承时的多态特性，实现子类挂载点等。
-
-x
