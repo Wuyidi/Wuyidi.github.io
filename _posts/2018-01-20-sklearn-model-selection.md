@@ -6,8 +6,7 @@ date:       2018-01-20
 author:     "Yidi"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - machine learning 
-    - sklearn
+    - machine learning
 ---
 
 

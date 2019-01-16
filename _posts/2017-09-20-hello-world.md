@@ -6,7 +6,6 @@ date:       2017-09-20 22:00:00
 author:     "Yidi"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - life
 ---
 
 ## 我为什么写博客
