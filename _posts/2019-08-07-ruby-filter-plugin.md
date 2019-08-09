@@ -203,7 +203,7 @@ if eventMgr.handleEvent(msg)
   dimensions = Hash.new
   normalFields = Hash.new
   measures = Hash.new
-  lantency = (eventMgr.eTime - eventMgr.sTime)*1000
+  latency = (eventMgr.eTime - eventMgr.sTime)*1000
   dimensions = {
   	'msgType' => eventMgr.msgType,
     'sTime' => eventMgr.sTime,
@@ -215,5 +215,14 @@ if eventMgr.handleEvent(msg)
     'cid' => eventMgr.cid,
     'logdate' => timestamp
   }
+  measures = {
+    'latency' => latency.to_f.round(3)
+  }
+  event.set('dimensions', dimensions)
+  event.set('normalFields', normalFields)
+  event.set('measures', measures)
+else
+  event.cancel
+end
 ```
 
